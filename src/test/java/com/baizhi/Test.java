@@ -9,6 +9,12 @@ import java.util.Set;
 @SpringBootTest(classes = CmfzStarApplication.class)
 public class Test {
 
+    System.out.println("=====================");
+     System.out.println("=====================");
+     System.out.println("=====================");
+     System.out.println("=====================");
+    System.out.println("=====================");
+    
     //99乘法表
     @org.junit.jupiter.api.Test
     public void test(){
