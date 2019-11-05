@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cmfz?characterEncoding=UTF-8
+    username: root
+    password: 123123
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+  servlet:
+    multipart:
+      max-request-size: 100MB
+      max-file-size: 20MB
+server:
+  port: 8020
+  servlet:
+    jsp:
+      init-parameters:
+        development: true
+    context-path: /star
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.baizhi.entity
