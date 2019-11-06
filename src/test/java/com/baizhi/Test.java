@@ -2,19 +2,10 @@ package com.baizhi;
 
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 @SpringBootTest(classes = CmfzStarApplication.class)
 public class Test {
-
-    System.out.println("=====================");
-     System.out.println("=====================");
-     System.out.println("=====================");
-     System.out.println("=====================");
-    System.out.println("=====================");
-    
     //99乘法表
     @org.junit.jupiter.api.Test
     public void test(){
@@ -42,6 +33,16 @@ public class Test {
         Set<Map.Entry<Character, Integer>> entry = map.entrySet();
         for (Map.Entry<Character, Integer> entries : entry) {
             System.out.println(entries.getKey()+"出现了"+entries.getValue()+"次");
+        }
+    }
+
+    //List<String> num = Arrays.asList("4","6","3","1","5","2") ;排序  升序（使用for循环，写出代码）
+    @org.junit.jupiter.api.Test
+    public void test2() {
+        List<String> num = Arrays.asList("4", "6", "3", "1", "5", "2");
+        String[] array = (String[]) num.toArray();
+        for (int i = 0; i < array.length; i++) {
+
         }
     }
 }
